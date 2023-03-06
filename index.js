@@ -1,5 +1,6 @@
 (async()=>{
     // default imports
+    //token in line 106
     const events = require('events');
     const { exec } = require("child_process")
     const logs = require("discord-logs")
@@ -103,7 +104,7 @@
     }
     
     
-    await s4d.client.login('MTA4MDEyNjQ3NTQ2MzgxOTI2NA.GyZw-E.tvAE_IQgNHhgzhOr4UO0Mgj9kQ81vBvSHtEtmY').catch((e) => {
+    await s4d.client.login('TOKEN').catch((e) => {
             const tokenInvalid = true;
             const tokenError = e;
             if (e.toString().toLowerCase().includes("token")) {
